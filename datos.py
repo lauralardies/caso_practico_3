@@ -8,3 +8,6 @@ end_date = datetime.now().strftime('%Y-%m-%d')
 
 # Obtener los datos de las acciones
 data = yf.download(tiker, start=start_date, end=end_date)
+
+# Guardamos los datos
+data.to_csv('ibex_data.csv')
