@@ -10,4 +10,4 @@ end_date = datetime.now().strftime('%Y-%m-%d')
 data = yf.download(tiker, start=start_date, end=end_date)
 
 # Guardamos los datos
-data.to_csv('ibex_data.csv')
+data.to_csv('./IBEX/data/ibex_data.csv')
